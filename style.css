@@ -1,5 +1,5 @@
 body { 
-  background: url(Images/AboutMeBackground.jpg) no-repeat center center fixed; 
+  background: url(Images/AboutMeBackground2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,4 +20,15 @@ body {
 #emailme {
 	background: url(Images/emailicon.png) no-repeat;
 	padding-left: 30px;
+}
+
+::selection{
+	color: black;
+	background-color: white;
+	text-shadow:1px 1px 1px #fff;
+
+}
+
+.icon {
+	margin-right: 3px;
 }
