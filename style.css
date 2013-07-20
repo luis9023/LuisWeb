@@ -5,3 +5,19 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#about {
+	margin-top:10%;
+	margin-right: 200px;
+	margin-left: 5%;
+	width: 650px; 
+	min-height: 80%;
+	color: white;
+	text-shadow:1px 1px 1px #000;
+	font-weight:lighter;
+}
+
+#emailme {
+	background: url(Images/emailicon.png) no-repeat;
+	padding-left: 30px;
+}
