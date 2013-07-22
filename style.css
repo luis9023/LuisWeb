@@ -6,6 +6,22 @@ body {
   background-size: cover;
 }
 
+#experience {
+  background: url(Images/Backgrounds/blackbg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#workshops {
+  background: url(Images/Backgrounds/blackbg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+}
+
 #about {
 	margin-top:10%;
 	margin-right: 200px;
@@ -25,6 +41,40 @@ body {
 	color: white;
 	text-shadow: 1px 1px 1px #000;
 	font-weight:lighter;
+}
+
+#experiencetext {
+	margin-top:10%;
+	margin-left: 5%;
+	width: 80%; 
+	min-height: 80%;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+	font-weight:lighter;
+}
+
+#experienceimg {
+	float: right;
+	width: 30%;
+	border-bottom: 1px solid white;
+}
+
+#workshopstext {
+	margin-top:10%;
+	margin-left: 5%;
+	width: 90%; 
+	min-height: 80%;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+	font-weight:lighter;
+}
+
+.experience {
+	border-bottom: 1px solid white;
+}
+
+.workshops {
+	border-bottom: 1px solid white;
 }
 
 #emailme {
