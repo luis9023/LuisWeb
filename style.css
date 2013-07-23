@@ -100,3 +100,8 @@ text-shadow: 1px 1px 1px #000;
 font-weight: 300;
 margin-bottom: 17px;
 }
+
+#footer{
+	position:absolute;
+   	bottom:0;
+}
