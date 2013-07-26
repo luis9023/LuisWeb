@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <meta charset="utf-8">
+    <title>Luis' Website &middot; Cruise Pictures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/pageicon2.png">
+
+        <!--*********FANCYBOX**********-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> 
+
+<script>
+  $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
+</script>
+
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent; 
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body id="technology">
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="home.html">Luis' Page</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <!--<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>-->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+</div>
+
+
+<div id="workshopstext">
+  <h2>Pictures:</h2>
+
+    <div class="workshops">
+        <div class="row-fluid">
+          <h4 class="subheader">Trip on Board Royal Caribbean Adventure of the Seas Cruise Ship from January 6 to January 14th, 2013.</h4>
+            <div class="row-fluid">
+                Had a wonderful time on board the Royal Caribbean Adventure of the Seas Cruise Ship with my Girlfriend and my parents!.  Click <a href="gallery.html">Here</a> to go back...<br><br>
+
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/1.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/1.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/2.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/2.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/3.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/3.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/4.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/4.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/5.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/5.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/6.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/6.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/7.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/7.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/8.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/8.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/9.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/9.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/10.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/10.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/11.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/11.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/12.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/12.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/13.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/13.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/14.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/14.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/15.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/15.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/16.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/16.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/17.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/17.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/18.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/18.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/19.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/19.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/20.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/20.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/21.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/21.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/22.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/22.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/23.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/23.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/24.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/24.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/25.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/25.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/26.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/26.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/27.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/27.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/28.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/28.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/29.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/29.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/30.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/30.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/31.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/31.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/32.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/32.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/33.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/33.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/34.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/34.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/35.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/35.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/36.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/36.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/37.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/37.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/38.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/38.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/39.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/39.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/40.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/40.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/41.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/41.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/42.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/42.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/43.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/43.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/44.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/44.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/45.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/45.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/46.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/46.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/47.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/47.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/48.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/48.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/49.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/49.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/50.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/50.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/RoyalCaribbeanCruise/51.jpg" title="RoyalCaribbeanCruise"><img src="../Photos/RoyalCaribbeanCruiseLow/51.jpg" alt="" /></a>
+                
+
+            </div><br>
+        </div>
+    </div>
+                <!--<a class="idisplay" href="Images/PrivatePlane2.jpg" data-lightbox="roadtrip" title="Click on the right side of the image to move forward."><img src="Images/PrivatePlane2.jpg" alt="Plants: image 1 0f 4 thumb" width="150" height="150"/></a>
+
+                <a class="idisplay" href="Images/PrivatePlane.jpg" data-lightbox="roadtrip" title="Click on the right side of the image to move forward."><img src="Images/PrivatePlane.jpg" alt="Plants: image 2 0f 4 thumb" width="150" height="150"/></a>
+
+                <a class="idisplay" href="Images/PrivatePlane2.jpg" data-lightbox="roadtrip" title="Click on the right side of the image to move forward."><img src="Images/PrivatePlane2.jpg" alt="Plants: image 3 0f 4 thumb" width="150" height="150"/></a>
+
+                <a class="idisplay" href="Images/PrivatePlane2.jpg" data-lightbox="roadtrip" title="Click on the right side of the image to move forward."><img src="Images/PrivatePlane2.jpg" alt="Plants: image 4 0f 4 thumb" width="150" height="150"/></a>-->
+               
+                
+            
+        
+    
+
+
+
+      <!-- FOOTER -->
+      <footer><br><br><br><br>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>This website is open source and can be found at: <a href="https://github.com/luis9023/LuisWeb" target="_blank">Github</a></p>
+      </footer>
+</div>
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+
+  <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="http://twitter.github.io/bootstrap/assets/js/holder/holder.js"></script>
+  </body>
+</html>

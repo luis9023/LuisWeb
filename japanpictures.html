@@ -14,8 +14,61 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="shortcut icon" href="Images/pageicon2.png">
-    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/lightbox.css" media="screen"/>
+
+    <!--*********FANCYBOX**********-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> 
+
+
+
+
+<script>
+
+
+  $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
+</script>
+
+<!--<script>
+
+$(".singlephoto").fancybox({
+
+    openEffect  : 'elastic',
+      closeEffect : 'elastic',
+
+          helpers: {
+              title : {
+                  type : 'float'
+              }
+          }
+      });
+
+
+
+</script>-->
+
+
+
+
+
+    <!--<link href="lightbox/css/lightbox.css" rel="stylesheet" />-->
+    <!--<link rel="stylesheet" href="light/css/lightbox.css" media="screen"/>-->
 
 
     <style>
@@ -331,67 +384,90 @@
         <div class="row-fluid">
           <h4 class="subheader">Trip to Japan Summer of 2011.</h4>
             <div class="row-fluid">
-                I always wanted to visit Japan. It was a beautiful place at <a href="https://en.wikipedia.org/wiki/Tokyo" target="_blank">Tokyo, Japan</a> and <a href="http://en.wikipedia.org/wiki/Narita,_Chiba" target="_blank">Narita, Chiba, Japan</a>. The temple visited was the <a href="http://en.wikipedia.org/wiki/Narita-san" target="_blank">Shinshoji Temple</a>.<br><br>
+                I always wanted to visit Japan. It was a beautiful place at <a href="https://en.wikipedia.org/wiki/Tokyo" target="_blank">Tokyo, Japan</a> and <a href="http://en.wikipedia.org/wiki/Narita,_Chiba" target="_blank">Narita, Chiba, Japan</a>. The temple visited was the <a href="http://en.wikipedia.org/wiki/Narita-san" target="_blank">Shinshoji Temple</a>.  Click <a href="gallery.html">Here</a> to go back...<br><br>
 
-                <!--<a href="../Photos/Japan/1.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/1.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/2.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/2.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/3.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/3.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/4.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/4.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/5.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/5.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/6.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/6.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/7.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/7.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/8.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/8.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/9.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/9.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/10.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/10.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/11.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/11.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/12.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/12.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/13.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/13.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/14.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/14.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/15.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/15.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/16.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/16.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/17.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/17.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/18.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/18.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/19.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/19.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/20.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/20.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/21.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/21.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/22.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/22.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/23.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/23.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/24.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/24.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/25.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/25.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/26.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/26.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/27.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/27.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/28.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/28.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/29.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/29.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/30.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/30.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/31.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/31.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/32.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/32.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/33.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/33.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/34.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/34.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/35.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/35.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/36.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/36.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/37.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/37.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/38.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/38.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/39.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/39.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/40.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/40.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/41.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/41.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/42.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/42.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/43.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/43.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/44.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/44.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/45.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/45.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/46.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/46.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/47.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/47.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/48.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/48.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/49.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/49.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/50.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/50.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/51.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/51.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/52.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/52.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/53.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/53.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/54.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/54.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/55.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/55.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/56.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/56.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/57.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/57.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/58.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/58.jpg" width="150" height="150"></a>
-                <a href="../Photos/Japan/59.jpg" data-lightbox="roadtrip"><img src="../Photos/Japan/59.jpg" width="150" height="150"></a>-->
+
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/1.jpg" title="JAPAN"><img src="../Photos/JapanLow/1.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/2.jpg" title="JAPAN"><img src="../Photos/JapanLow/2.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/3.jpg" title="JAPAN"><img src="../Photos/JapanLow/3.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/4.jpg" title="JAPAN"><img src="../Photos/JapanLow/4.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/5.jpg" title="JAPAN"><img src="../Photos/JapanLow/5.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/6.jpg" title="JAPAN"><img src="../Photos/JapanLow/6.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/7.jpg" title="JAPAN"><img src="../Photos/JapanLow/7.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/8.jpg" title="JAPAN"><img src="../Photos/JapanLow/8.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/9.jpg" title="JAPAN"><img src="../Photos/JapanLow/9.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/10.jpg" title="JAPAN"><img src="../Photos/JapanLow/10.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/11.jpg" title="JAPAN"><img src="../Photos/JapanLow/11.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/12.jpg" title="JAPAN"><img src="../Photos/JapanLow/12.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/13.jpg" title="JAPAN"><img src="../Photos/JapanLow/13.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/14.jpg" title="JAPAN"><img src="../Photos/JapanLow/14.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/15.jpg" title="JAPAN"><img src="../Photos/JapanLow/15.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/16.jpg" title="JAPAN"><img src="../Photos/JapanLow/16.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/17.jpg" title="JAPAN"><img src="../Photos/JapanLow/17.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/18.jpg" title="JAPAN"><img src="../Photos/JapanLow/18.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/19.jpg" title="JAPAN"><img src="../Photos/JapanLow/19.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/20.jpg" title="JAPAN"><img src="../Photos/JapanLow/20.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/21.jpg" title="JAPAN"><img src="../Photos/JapanLow/21.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/22.jpg" title="JAPAN"><img src="../Photos/JapanLow/22.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/23.jpg" title="JAPAN"><img src="../Photos/JapanLow/23.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/24.jpg" title="JAPAN"><img src="../Photos/JapanLow/24.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/25.jpg" title="JAPAN"><img src="../Photos/JapanLow/25.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/26.jpg" title="JAPAN"><img src="../Photos/JapanLow/26.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/27.jpg" title="JAPAN"><img src="../Photos/JapanLow/27.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/28.jpg" title="JAPAN"><img src="../Photos/JapanLow/28.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/29.jpg" title="JAPAN"><img src="../Photos/JapanLow/29.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/30.jpg" title="JAPAN"><img src="../Photos/JapanLow/30.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/31.jpg" title="JAPAN"><img src="../Photos/JapanLow/31.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/32.jpg" title="JAPAN"><img src="../Photos/JapanLow/32.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/33.jpg" title="JAPAN"><img src="../Photos/JapanLow/33.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/34.jpg" title="JAPAN"><img src="../Photos/JapanLow/34.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/35.jpg" title="JAPAN"><img src="../Photos/JapanLow/35.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/36.jpg" title="JAPAN"><img src="../Photos/JapanLow/36.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/37.jpg" title="JAPAN"><img src="../Photos/JapanLow/37.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/38.jpg" title="JAPAN"><img src="../Photos/JapanLow/38.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/39.jpg" title="JAPAN"><img src="../Photos/JapanLow/39.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/40.jpg" title="JAPAN"><img src="../Photos/JapanLow/40.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/41.jpg" title="JAPAN"><img src="../Photos/JapanLow/41.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/42.jpg" title="JAPAN"><img src="../Photos/JapanLow/42.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/43.jpg" title="JAPAN"><img src="../Photos/JapanLow/43.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/44.jpg" title="JAPAN"><img src="../Photos/JapanLow/44.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/45.jpg" title="JAPAN"><img src="../Photos/JapanLow/45.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/46.jpg" title="JAPAN"><img src="../Photos/JapanLow/46.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/47.jpg" title="JAPAN"><img src="../Photos/JapanLow/47.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/48.jpg" title="JAPAN"><img src="../Photos/JapanLow/48.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/49.jpg" title="JAPAN"><img src="../Photos/JapanLow/49.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/50.jpg" title="JAPAN"><img src="../Photos/JapanLow/50.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/51.jpg" title="JAPAN"><img src="../Photos/JapanLow/51.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/52.jpg" title="JAPAN"><img src="../Photos/JapanLow/52.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/53.jpg" title="JAPAN"><img src="../Photos/JapanLow/53.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/54.jpg" title="JAPAN"><img src="../Photos/JapanLow/54.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/55.jpg" title="JAPAN"><img src="../Photos/JapanLow/55.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/56.jpg" title="JAPAN"><img src="../Photos/JapanLow/56.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/57.jpg" title="JAPAN"><img src="../Photos/JapanLow/57.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/58.jpg" title="JAPAN"><img src="../Photos/JapanLow/58.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/59.jpg" title="JAPAN"><img src="../Photos/JapanLow/59.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/60.jpg" title="JAPAN"><img src="../Photos/JapanLow/60.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/61.jpg" title="JAPAN"><img src="../Photos/JapanLow/61.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/62.jpg" title="JAPAN"><img src="../Photos/JapanLow/62.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/63.jpg" title="JAPAN"><img src="../Photos/JapanLow/63.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/64.jpg" title="JAPAN"><img src="../Photos/JapanLow/64.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/65.jpg" title="JAPAN"><img src="../Photos/JapanLow/65.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/66.jpg" title="JAPAN"><img src="../Photos/JapanLow/66.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/67.jpg" title="JAPAN"><img src="../Photos/JapanLow/67.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/68.jpg" title="JAPAN"><img src="../Photos/JapanLow/68.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/69.jpg" title="JAPAN"><img src="../Photos/JapanLow/69.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/70.jpg" title="JAPAN"><img src="../Photos/JapanLow/70.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/71.jpg" title="JAPAN"><img src="../Photos/JapanLow/71.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/72.jpg" title="JAPAN"><img src="../Photos/JapanLow/72.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/73.jpg" title="JAPAN"><img src="../Photos/JapanLow/73.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/74.jpg" title="JAPAN"><img src="../Photos/JapanLow/74.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/75.jpg" title="JAPAN"><img src="../Photos/JapanLow/75.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/76.jpg" title="JAPAN"><img src="../Photos/JapanLow/76.jpg" alt="" /></a>
+                <a class="fancybox" rel="gallery1" href="../Photos/Japan/77.jpg" title="JAPAN"><img src="../Photos/JapanLow/77.jpg" alt="" /></a>
+
+
+
+
 
 
             </div><br>
@@ -426,8 +502,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="lightbox/js/jquery-1.10.2.min.js"></script>
-    <script src="lightbox/js/lightbox-2.6.min.js"></script>
+
     <script src="http://twitter.github.io/bootstrap/assets/js/jquery.js"></script>
     <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
     <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-alert.js"></script>
@@ -453,6 +528,16 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   </script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        width : '70%',
+        height : '70%'
+    });
+$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").fancybox();
+});
+</script>
 
     <script>
       !function ($) {

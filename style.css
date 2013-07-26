@@ -136,3 +136,9 @@ body {
 	position:absolute;
    	bottom:0;
 }
+
+#galleryimg {
+	margin-left: 3%;
+	width: 900px;
+	height: 400px;
+}
