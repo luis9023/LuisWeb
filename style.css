@@ -77,6 +77,10 @@ body {
 	font-weight:lighter;
 }
 
+#donations {
+	margin-left: 35%;
+}
+
 #experienceimg {
 	float: right;
 	width: 30%;
