@@ -7,7 +7,7 @@ body {
 }
 
 #experience {
-  background: url(Images/Backgrounds/blackbg.jpg) no-repeat center center fixed; 
+  background: url(Images/Backgrounds/blackBg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +15,7 @@ body {
 }
 
 #workshops {
-  background: url(Images/Backgrounds/blackbg.jpg) no-repeat center center fixed; 
+  background: url(Images/Backgrounds/blackBg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -78,7 +78,8 @@ body {
 }
 
 #donations {
-	margin-left: 35%;
+	margin-left: 40%;
+	margin-right: 44%;
 }
 
 #experienceimg {
